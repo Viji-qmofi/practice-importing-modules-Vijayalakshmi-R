@@ -4,8 +4,13 @@ const tasks = require('./taskManager');
 
 //Import in built module
 const path = require('path');
+const fs = require("fs");
 
 const newFilePath = path.join(__dirname, "tasks.json");
+
+// Always reset tasks.json to empty at program start
+fs.writeFileSync(newFilePath, JSON.stringify([]));
+
 const taskArray = files.loadTasks(newFilePath);
 
 
