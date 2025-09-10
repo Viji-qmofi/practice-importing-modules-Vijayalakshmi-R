@@ -20,3 +20,11 @@ tasks.addTask(taskArray,["wash","dry","hang","fold"]);
 tasks.listTasks(taskArray);
 
 files.saveTask(newFilePath,taskArray);
+
+/*Output
+node app.js
+sort
+wash
+dry
+hang
+fold */
