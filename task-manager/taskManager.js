@@ -1,6 +1,7 @@
 const taskArray = ["wash","dry","fold"];
 
 function addTask (tasks, task) {
+    //check if the task is an array
     if (Array.isArray(task)) {
        for (item of task) { 
             tasks.push(item);
@@ -20,5 +21,3 @@ module.exports = {
 };
 
 
-// addTask(taskArray,"hang");
-// listTasks(taskArray);
